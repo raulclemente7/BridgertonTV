@@ -1,0 +1,2153 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#"
+     xml:base="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:Bridgerton="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton">
+        <rdfs:comment>This is an ontology of Bridgerton TV serie created by Raul Clemente García and Óscar Quero Hijano.</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Belongs_to_family -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Belongs_to_family">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Nobility"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Families_Nobility"/>
+        <rdfs:comment>A nobility character has a family</rdfs:comment>
+        <rdfs:label xml:lang="en">Belongs to family</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Is_brother_or_sister_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Is_brother_or_sister_of">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Characters"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Characters"/>
+        <rdfs:comment>Link with brother of sisters</rdfs:comment>
+        <rdfs:label xml:lang="en">Is brother or sister of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Is_dependant_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Is_dependant_of">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Characters"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Characters"/>
+        <rdfs:comment>The character of who depends</rdfs:comment>
+        <rdfs:label xml:lang="en">Is dependant of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Is_distributed_by -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Is_distributed_by">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Seassons"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Content_Delivery_Platforms"/>
+        <rdfs:comment>Seasons are distributed by a company</rdfs:comment>
+        <rdfs:label xml:lang="en">Is distributed by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Is_father_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Is_father_of">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Nobility"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Nobility"/>
+        <rdfs:comment>Property to determine the father</rdfs:comment>
+        <rdfs:label xml:lang="en">Is father of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Plays_the_role_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Plays_the_role_of">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Filming_Crew"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Characters"/>
+        <rdfs:comment>An actor/Actress plays the role of an especific character.</rdfs:comment>
+        <rdfs:label xml:lang="en">Plays the role of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Director -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Director">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Seassons"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Director</rdfs:comment>
+        <rdfs:label xml:lang="en">Director</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Episode_Number -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Episode_Number">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Seassons"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:comment>Episode number</rdfs:comment>
+        <rdfs:label xml:lang="en">Episode Number</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Music_Duration -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Music_Duration">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Music"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>Duration in seconds</rdfs:comment>
+        <rdfs:label xml:lang="en">Music Duration</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Screenwriter -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Screenwriter">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Seassons"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Screenwriter</rdfs:comment>
+        <rdfs:label xml:lang="en">Screenwriter</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Type_Platform -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Type_Platform">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Content_Delivery_Platforms"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Type of platform</rdfs:comment>
+        <rdfs:label xml:lang="en">Type Platform</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#URL -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#URL">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Content_Delivery_Platforms"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Music"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>URL</rdfs:comment>
+        <rdfs:label xml:lang="en">URL</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Actors -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Actors">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Filming_Crew"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Actresses"/>
+        <rdfs:comment>Actors involved</rdfs:comment>
+        <rdfs:label xml:lang="en">Actor</rdfs:label>
+        <rdfs:seeAlso>https://dbpedia.org/ontology/Actor</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Actresses -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Actresses">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Filming_Crew"/>
+        <rdfs:comment>Actresses involved</rdfs:comment>
+        <rdfs:label xml:lang="en">Actress</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Beethoven -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Beethoven">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Music"/>
+        <rdfs:comment>music created by this author</rdfs:comment>
+        <rdfs:label xml:lang="en">Beethoven</rdfs:label>
+        <rdfs:seeAlso>https://dbpedia.org/page/Ludwig_van_Beethoven</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Characters -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Characters">
+        <rdfs:comment>Characters that participate</rdfs:comment>
+        <rdfs:label xml:lang="en">Character</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Commoner -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Commoner">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Characters"/>
+        <rdfs:comment>Not nobility members</rdfs:comment>
+        <rdfs:label xml:lang="en">Commoner</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Content_Delivery_Platforms -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Content_Delivery_Platforms">
+        <rdfs:comment>Content delivery platforms for it</rdfs:comment>
+        <rdfs:label xml:lang="en">Content Delivery Platform</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Dmitri_Shostakovich -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Dmitri_Shostakovich">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Music"/>
+        <rdfs:comment>music created by this author</rdfs:comment>
+        <rdfs:label xml:lang="en">Dmitri Shostakovich</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Duomo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Duomo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Music"/>
+        <rdfs:comment>music created by this author</rdfs:comment>
+        <rdfs:label xml:lang="en">Duomo</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Episodes_Seasson_1 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Episodes_Seasson_1">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Season_1"/>
+        <rdfs:comment>Episodes of session 1</rdfs:comment>
+        <rdfs:label xml:lang="en">Episode Season 1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Episodes_Seasson_2 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Episodes_Seasson_2">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Season_2"/>
+        <rdfs:comment>Episodes of session 2</rdfs:comment>
+        <rdfs:label xml:lang="en">Episode Season 2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Families_Nobility -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Families_Nobility">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Seassons"/>
+        <rdfs:comment>Nobility families</rdfs:comment>
+        <rdfs:label xml:lang="en">Family Nobility</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Filming_Crew -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Filming_Crew">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Plays_the_role_of"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Characters"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:comment>All people involved (main people)</rdfs:comment>
+        <rdfs:label xml:lang="en">Filming Crew</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Hannah_V -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Hannah_V">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Music"/>
+        <rdfs:comment>music created by this author</rdfs:comment>
+        <rdfs:label xml:lang="en">Hannah V</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Haydn -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Haydn">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Music"/>
+        <rdfs:comment>music created by this author</rdfs:comment>
+        <rdfs:label xml:lang="en">Haydn</rdfs:label>
+        <rdfs:seeAlso>https://dbpedia.org/page/Joseph_Haydn</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Jacques_Offenbach -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Jacques_Offenbach">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Music"/>
+        <rdfs:comment>music created by this author</rdfs:comment>
+        <rdfs:label xml:lang="en">Jacques Offenbach</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Kris_Bowers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Kris_Bowers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Music"/>
+        <rdfs:comment>music created by this author</rdfs:comment>
+        <rdfs:label xml:lang="en">Kris Bowers</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Kris_Houston -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Kris_Houston">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Music"/>
+        <rdfs:comment>music created by this author</rdfs:comment>
+        <rdfs:label xml:lang="en">Kris Houston</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#London -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#London">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Scenaries"/>
+        <rdfs:comment>London scenaries</rdfs:comment>
+        <rdfs:label xml:lang="en">London</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Max_Richter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Max_Richter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Music"/>
+        <rdfs:comment>music created by this author</rdfs:comment>
+        <rdfs:label xml:lang="en">Max Richter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Midnite_String_Quartet -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Midnite_String_Quartet">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Music"/>
+        <rdfs:comment>music created by this author</rdfs:comment>
+        <rdfs:label xml:lang="en">Midnite String Quartet</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Mozart -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Mozart">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Music"/>
+        <rdfs:comment>music created by this author</rdfs:comment>
+        <rdfs:label xml:lang="en">Mozart</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Music -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Music">
+        <rdfs:comment>Music of TV serie</rdfs:comment>
+        <rdfs:label xml:lang="en">Music</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Nobility -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Nobility">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Characters"/>
+        <rdfs:comment>Nobility members</rdfs:comment>
+        <rdfs:label xml:lang="en">Nobility</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Other -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Other">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Characters"/>
+        <rdfs:comment>Other characters</rdfs:comment>
+        <rdfs:label xml:lang="en">Other</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Out_of_London -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Out_of_London">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Scenaries"/>
+        <rdfs:comment>Out of London scenaries.</rdfs:comment>
+        <rdfs:label xml:lang="en">Out of London</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Peter_Gregson -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Peter_Gregson">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Music"/>
+        <rdfs:comment>music created by this author</rdfs:comment>
+        <rdfs:label xml:lang="en">Peter Gregson</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Production_Team -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Production_Team">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Filming_Crew"/>
+        <rdfs:comment>Production team</rdfs:comment>
+        <rdfs:label xml:lang="en">Production Team</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Scenaries -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Scenaries">
+        <rdfs:comment>Different scenaries showed</rdfs:comment>
+        <rdfs:label xml:lang="en">Scenery</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Season_1 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Season_1">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Seassons"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Season_2"/>
+        <rdfs:comment>Seasson one</rdfs:comment>
+        <rdfs:label xml:lang="en">Season 1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Season_2 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Season_2">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Seassons"/>
+        <rdfs:comment>Seasson two</rdfs:comment>
+        <rdfs:label xml:lang="en">Season 2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Seassons -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Seassons">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Is_distributed_by"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Content_Delivery_Platforms"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:comment>Seassons produced</rdfs:comment>
+        <rdfs:label xml:lang="en">Season</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Steve_Horner -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Steve_Horner">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Music"/>
+        <rdfs:comment>music created by this author</rdfs:comment>
+        <rdfs:label xml:lang="en">Steve Horner</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Transports -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Transports">
+        <rdfs:comment>Class to show different trasports used by characters.</rdfs:comment>
+        <rdfs:label xml:lang="en">Transport</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Vitamin_String_Quartet -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Vitamin_String_Quartet">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Music"/>
+        <rdfs:comment>music created by this author</rdfs:comment>
+        <rdfs:label xml:lang="en">Vitanim String Quartet</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#A_Country_Visit -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#A_Country_Visit">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Kris_Bowers"/>
+        <Music_Duration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">79</Music_Duration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#A_Gift_For_Edwina -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#A_Gift_For_Edwina">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Kris_Bowers"/>
+        <Music_Duration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">61</Music_Duration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#A_Grand_Finish -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#A_Grand_Finish">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Kris_Bowers"/>
+        <Music_Duration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">213</Music_Duration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#A_Love_Based_on_Friendship -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#A_Love_Based_on_Friendship">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Kris_Bowers"/>
+        <Music_Duration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">259</Music_Duration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Adjoa_Andoh -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Adjoa_Andoh">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Actresses"/>
+        <Plays_the_role_of rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Lady_Danbury"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Adult -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Adult"/>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#All_is_Fair_in_Love_and_War -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#All_is_Fair_in_Love_and_War">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Kris_Bowers"/>
+        <Music_Duration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">140</Music_Duration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Anthony_Bridgerton -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Anthony_Bridgerton">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Nobility"/>
+        <Belongs_to_family rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Bridgerton"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Baron_Featherington -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Baron_Featherington">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Nobility"/>
+        <Belongs_to_family rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Featherington"/>
+        <Is_father_of rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Lady_Violet_Bridgerton"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Basset -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Basset">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Families_Nobility"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Ben_Miller -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Ben_Miller">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Actors"/>
+        <Plays_the_role_of rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Baron_Featherington"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Benedict_Bridgerton -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Benedict_Bridgerton">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Nobility"/>
+        <Belongs_to_family rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Bridgerton"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Bessie_Carter -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Bessie_Carter">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Actresses"/>
+        <Plays_the_role_of rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Prudence_Featherington"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Betsy_Beers -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Betsy_Beers">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Production_Team"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Bridgerton -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Bridgerton">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Families_Nobility"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Calam_Lynch -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Calam_Lynch">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Actors"/>
+        <Plays_the_role_of rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Theo_Sharpe"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Call_Me_Simon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Call_Me_Simon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Kris_Bowers"/>
+        <Music_Duration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">58</Music_Duration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Charithra_Chandran -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Charithra_Chandran">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Actresses"/>
+        <Plays_the_role_of rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Edwina_Sharma"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Choices -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Choices">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Kris_Bowers"/>
+        <Music_Duration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">161</Music_Duration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Chris_Van_Dusen -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Chris_Van_Dusen">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Production_Team"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Claudia_Jessie -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Claudia_Jessie">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Actresses"/>
+        <Plays_the_role_of rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Eloise_Bridgerton"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Colin_Bridgerton -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Colin_Bridgerton">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Nobility"/>
+        <Belongs_to_family rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Bridgerton"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Come_With_Me -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Come_With_Me">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Kris_Bowers"/>
+        <Music_Duration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">147</Music_Duration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Cowper -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Cowper">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Families_Nobility"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Crane -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Crane">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Families_Nobility"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Cressida_Cowper -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Cressida_Cowper">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Nobility"/>
+        <Belongs_to_family rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Cowper"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Danbury -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Danbury">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Families_Nobility"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Dancing_On_My_Own -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Dancing_On_My_Own">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Vitamin_String_Quartet"/>
+        <Music_Duration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">279</Music_Duration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Daphne_Bridgerton -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Daphne_Bridgerton">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Nobility"/>
+        <Belongs_to_family rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Bridgerton"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Dependant -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Dependant"/>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Diamonds -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Diamonds">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Hannah_V"/>
+        <Music_Duration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">116</Music_Duration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Edwina_Sharma -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Edwina_Sharma">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Nobility"/>
+        <Belongs_to_family rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Sharma"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Eloise_Bridgerton -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Eloise_Bridgerton">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Nobility"/>
+        <Belongs_to_family rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Bridgerton"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Featherington -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Featherington">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Families_Nobility"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Feeling_Exceptional -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Feeling_Exceptional">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Kris_Bowers"/>
+        <Music_Duration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">190</Music_Duration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Flawless_My_Dear -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Flawless_My_Dear">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Kris_Bowers"/>
+        <Music_Duration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">103</Music_Duration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Francesca_Bridgerton -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Francesca_Bridgerton">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Nobility"/>
+        <Belongs_to_family rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Bridgerton"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Freddie_Stroma -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Freddie_Stroma">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Actors"/>
+        <Plays_the_role_of rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Prince_of_Prussia"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Game_Over -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Game_Over">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Kris_Bowers"/>
+        <Music_Duration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">74</Music_Duration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Genevieve_Delacroix -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Genevieve_Delacroix">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Commoner"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Girls_Like_You -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Girls_Like_You">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Vitamin_String_Quartet"/>
+        <Music_Duration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">203</Music_Duration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Golda_Rosheuvel -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Golda_Rosheuvel">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Actresses"/>
+        <Plays_the_role_of rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Queen_Carlota_de_Mecklemburgo-Strelitz"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Gregory_Bridgerton -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Gregory_Bridgerton">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Nobility"/>
+        <Belongs_to_family rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Bridgerton"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Harriet_Cains -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Harriet_Cains">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Actresses"/>
+        <Plays_the_role_of rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Philippa_Featherington"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Hearts_and_Flowers_Ball -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Hearts_and_Flowers_Ball">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Kris_Bowers"/>
+        <Music_Duration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">82</Music_Duration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#How_Deep_Is_Your_Love -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#How_Deep_Is_Your_Love">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Kris_Houston"/>
+        <Music_Duration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">226</Music_Duration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Hyacinth_Bridgerton -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Hyacinth_Bridgerton">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Nobility"/>
+        <Belongs_to_family rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Bridgerton"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#I_Love_You -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#I_Love_You">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Kris_Bowers"/>
+        <Music_Duration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">126</Music_Duration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#In_My_Blood -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#In_My_Blood">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Vitamin_String_Quartet"/>
+        <Music_Duration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">210</Music_Duration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#It_Has_Been_Said -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#It_Has_Been_Said">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Kris_Bowers"/>
+        <Music_Duration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">151</Music_Duration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Jessica_Madsen -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Jessica_Madsen">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Actresses"/>
+        <Plays_the_role_of rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Cressida_Cowper"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Joanna_Bobin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Joanna_Bobin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Actresses"/>
+        <Plays_the_role_of rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Lady_Cowper"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Jonathan_Bailey -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Jonathan_Bailey">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Actors"/>
+        <Plays_the_role_of rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Anthony_Bridgerton"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Julie_Andrews -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Julie_Andrews">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Actresses"/>
+        <Plays_the_role_of rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Lady_Whistledown_Narrator"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Kabhi_Khushi_Kabhie_Gham -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Kabhi_Khushi_Kabhie_Gham">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Kris_Bowers"/>
+        <Music_Duration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">208</Music_Duration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Kate_Sharma -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Kate_Sharma">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Nobility"/>
+        <Belongs_to_family rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Sharma"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Kathryn_Drysdale -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Kathryn_Drysdale">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Actresses"/>
+        <Plays_the_role_of rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Genevieve_Delacroix"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Lady_Cowper -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Lady_Cowper">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Nobility"/>
+        <Belongs_to_family rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Cowper"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Lady_Danbury -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Lady_Danbury">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Nobility"/>
+        <Belongs_to_family rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Danbury"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Lady_Portia_Featherington -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Lady_Portia_Featherington">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Nobility"/>
+        <Belongs_to_family rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Featherington"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Lady_Violet_Bridgerton -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Lady_Violet_Bridgerton">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Nobility"/>
+        <Belongs_to_family rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Bridgerton"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Lady_Whistledown_Narrator -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Lady_Whistledown_Narrator">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Other"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Lord_Bridgerton_Stung -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Lord_Bridgerton_Stung">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Kris_Bowers"/>
+        <Music_Duration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">90</Music_Duration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Lord_Jack_Featherington -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Lord_Jack_Featherington">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Nobility"/>
+        <Belongs_to_family rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Featherington"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Lorraine_Ashbourne -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Lorraine_Ashbourne">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Actresses"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Love_is_A_Choice -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Love_is_A_Choice">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Kris_Bowers"/>
+        <Music_Duration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">140</Music_Duration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Luke_Newton -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Luke_Newton">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Actors"/>
+        <Plays_the_role_of rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Colin_Bridgerton"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Luke_Thompson -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Luke_Thompson">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Actors"/>
+        <Plays_the_role_of rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Benedict_Bridgerton"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Marina_Thompson -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Marina_Thompson">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Nobility"/>
+        <Belongs_to_family rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Crane"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Martins_Imhangbe -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Martins_Imhangbe">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Actors"/>
+        <Plays_the_role_of rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Will_Mondrich"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Mary_Sharma -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Mary_Sharma">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Nobility"/>
+        <Belongs_to_family rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Sharma"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Material_Girl -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Material_Girl">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Kris_Bowers"/>
+        <Music_Duration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">244</Music_Duration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Mayfare -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Mayfare">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#London"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Mrs._Varley -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Mrs._Varley">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Commoner"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Netflix -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Netflix">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Content_Delivery_Platforms"/>
+        <Type_Platform>Internet</Type_Platform>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Newlyweds -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Newlyweds">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Kris_Bowers"/>
+        <Music_Duration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">123</Music_Duration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Nicola_Coughlan -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Nicola_Coughlan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Actresses"/>
+        <Plays_the_role_of rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Penelope_Featherington"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Not_Far_Enough -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Not_Far_Enough">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Kris_Bowers"/>
+        <Music_Duration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">132</Music_Duration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Nothing_Could_Keep_Me_Away -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Nothing_Could_Keep_Me_Away">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Kris_Bowers"/>
+        <Music_Duration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">77</Music_Duration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#One_Last_Dance -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#One_Last_Dance">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Kris_Bowers"/>
+        <Music_Duration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">164</Music_Duration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Penelope_Featherington -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Penelope_Featherington">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Nobility"/>
+        <Belongs_to_family rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Featherington"/>
+        <Is_dependant_of rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Baron_Featherington"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Philip_Crane -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Philip_Crane">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Nobility"/>
+        <Belongs_to_family rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Crane"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Philippa_Featherington -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Philippa_Featherington">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Nobility"/>
+        <Belongs_to_family rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Featherington"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Phoebe_Dynevor -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Phoebe_Dynevor">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Actresses"/>
+        <Plays_the_role_of rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Daphne_Bridgerton"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Polly_Walker -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Polly_Walker">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Actresses"/>
+        <Plays_the_role_of rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Lady_Portia_Featherington"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Prince_of_Prussia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Prince_of_Prussia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Nobility"/>
+        <Belongs_to_family rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Royal_family"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Prudence_Featherington -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Prudence_Featherington">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Nobility"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Queen_Carlota_de_Mecklemburgo-Strelitz -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Queen_Carlota_de_Mecklemburgo-Strelitz">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Nobility"/>
+        <Belongs_to_family rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Royal_family"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Regé-Jean_Page -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Regé-Jean_Page">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Actors"/>
+        <Plays_the_role_of rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Simon_Basset​"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Royal_Palace -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Royal_Palace">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#London"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Royal_family -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Royal_family">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Families_Nobility"/>
+        <Belongs_to_family rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Royal_family"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Ruby_Barker -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Ruby_Barker">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Actresses"/>
+        <Plays_the_role_of rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Marina_Thompson"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Ruby_Stokes -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Ruby_Stokes">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Actresses"/>
+        <Plays_the_role_of rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Francesca_Bridgerton"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Rupert_Young -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Rupert_Young">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Actors"/>
+        <Plays_the_role_of rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Lord_Jack_Featherington"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Ruth_Gemmell -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Ruth_Gemmell">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Actresses"/>
+        <Plays_the_role_of rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Lady_Violet_Bridgerton"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Sabrina_Bartlett -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Sabrina_Bartlett">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Actresses"/>
+        <Plays_the_role_of rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Siena_Rosso"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Sharma -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Sharma">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Families_Nobility"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Shelley_Conn -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Shelley_Conn">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Actresses"/>
+        <Plays_the_role_of rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Mary_Sharma"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Shock_and_Delight -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Shock_and_Delight">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Kris_Bowers"/>
+        <Music_Duration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">242</Music_Duration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Shonda_Rhimes -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Shonda_Rhimes">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Production_Team"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Siena_Rosso -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Siena_Rosso">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Commoner"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Sign_of_the_Times_-_Stripped -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Sign_of_the_Times_-_Stripped">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Steve_Horner"/>
+        <Music_Duration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">159</Music_Duration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Simon_and_Lady_Danbury -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Simon_and_Lady_Danbury">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Kris_Bowers"/>
+        <Music_Duration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">282</Music_Duration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Simone_Ashley -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Simone_Ashley">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Actresses"/>
+        <Plays_the_role_of rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Kate_Sharma"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Sommerset_House -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Sommerset_House">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Kris_Bowers"/>
+        <Music_Duration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">65</Music_Duration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Spring_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Spring_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Max_Richter"/>
+        <Music_Duration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">151</Music_Duration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Stay_Away -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Stay_Away">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Vitamin_String_Quartet"/>
+        <Music_Duration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">187</Music_Duration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#The_Duel -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#The_Duel">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Kris_Bowers"/>
+        <Music_Duration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">433</Music_Duration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#The_Latest_Whistledown -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#The_Latest_Whistledown">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Kris_Bowers"/>
+        <Music_Duration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">94</Music_Duration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Theo_Sharpe -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Theo_Sharpe">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Commoner"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#They_Are_Betrothed -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#They_Are_Betrothed">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Kris_Bowers"/>
+        <Music_Duration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">70</Music_Duration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#To_Wait -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#To_Wait">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Kris_Bowers"/>
+        <Music_Duration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">68</Music_Duration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#We_Could_Form_An_Attachment -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#We_Could_Form_An_Attachment">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Kris_Bowers"/>
+        <Music_Duration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">187</Music_Duration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#What_About_Us -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#What_About_Us">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Duomo"/>
+        <Music_Duration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">291</Music_Duration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#What_Women_Do_Best -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#What_Women_Do_Best">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Kris_Bowers"/>
+        <Music_Duration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">167</Music_Duration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#What_You_Saw_Was_A_Lie -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#What_You_Saw_Was_A_Lie">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Kris_Bowers"/>
+        <Music_Duration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">315</Music_Duration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#When_You_Are_Alone -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#When_You_Are_Alone">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Kris_Bowers"/>
+        <Music_Duration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">166</Music_Duration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Wildest_Dreams -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Wildest_Dreams">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Duomo"/>
+        <Music_Duration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">203</Music_Duration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Will_Mondrich -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Will_Mondrich">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Commoner"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Will_Tilston -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Will_Tilston">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Actors"/>
+        <Plays_the_role_of rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Gregory_Bridgerton"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Wrecking_Ball -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Wrecking_Ball">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Midnite_String_Quartet"/>
+        <Music_Duration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">233</Music_Duration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#You_Oughta_Know -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#You_Oughta_Know">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Duomo"/>
+        <Music_Duration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">167</Music_Duration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#bad_guy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#bad_guy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Vitamin_String_Quartet"/>
+        <Music_Duration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">193</Music_Duration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#1._Capital_R_Rake -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#1._Capital_R_Rake">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Episodes_Seasson_2"/>
+        <Is_distributed_by rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Netflix"/>
+        <Director>Tricia Brock</Director>
+        <Episode_Number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</Episode_Number>
+        <Screenwriter>Chris Van Dusen</Screenwriter>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#1._Diamond_of_the_First_Water -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#1._Diamond_of_the_First_Water">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Episodes_Seasson_1"/>
+        <Is_distributed_by rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Netflix"/>
+        <Director>Julie Anne Robinson</Director>
+        <Episode_Number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</Episode_Number>
+        <Screenwriter>Chris Van Dusen</Screenwriter>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#2._Off_to_the_Races -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#2._Off_to_the_Races">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Episodes_Seasson_2"/>
+        <Is_distributed_by rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Netflix"/>
+        <Director>Tricia Brock</Director>
+        <Episode_Number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</Episode_Number>
+        <Screenwriter>Daniel Robinson</Screenwriter>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#2._Shock_and_Delight -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#2._Shock_and_Delight">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Episodes_Seasson_1"/>
+        <Is_distributed_by rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Netflix"/>
+        <Director>Tom Verica</Director>
+        <Episode_Number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</Episode_Number>
+        <Screenwriter>Janet Lin</Screenwriter>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#3._A_Bee_in_Your_Bonnet -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#3._A_Bee_in_Your_Bonnet">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Episodes_Seasson_2"/>
+        <Is_distributed_by rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Netflix"/>
+        <Director>Alex Pillai</Director>
+        <Episode_Number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</Episode_Number>
+        <Screenwriter>Sarah L. Thompson</Screenwriter>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#3._Art_of_the_Swoon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#3._Art_of_the_Swoon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Episodes_Seasson_1"/>
+        <Is_distributed_by rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Netflix"/>
+        <Director>Tom Verica</Director>
+        <Episode_Number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</Episode_Number>
+        <Screenwriter>Leila Cohan-Miccio</Screenwriter>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#4._An_Affair_of_Honor -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#4._An_Affair_of_Honor">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Episodes_Seasson_1"/>
+        <Is_distributed_by rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Netflix"/>
+        <Director>Sheree Folkson</Director>
+        <Episode_Number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</Episode_Number>
+        <Screenwriter>Abby McDonald</Screenwriter>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#4._Victory -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#4._Victory">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Episodes_Seasson_2"/>
+        <Is_distributed_by rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Netflix"/>
+        <Director>Alex Pillai</Director>
+        <Episode_Number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</Episode_Number>
+        <Screenwriter>Chris Van Dusen y Jess Brownell</Screenwriter>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#5._An_Unthinkable_Fate -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#5._An_Unthinkable_Fate">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Episodes_Seasson_2"/>
+        <Is_distributed_by rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Netflix"/>
+        <Director>Tom Verica</Director>
+        <Episode_Number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</Episode_Number>
+        <Screenwriter>Abby McDonald</Screenwriter>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#5._The_Duke_and_I -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#5._The_Duke_and_I">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Episodes_Seasson_1"/>
+        <Is_distributed_by rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Netflix"/>
+        <Director>Sheree Folkson</Director>
+        <Episode_Number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</Episode_Number>
+        <Screenwriter>Joy C Mitchell</Screenwriter>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#6._Swish -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#6._Swish">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Episodes_Seasson_1"/>
+        <Is_distributed_by rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Netflix"/>
+        <Director>Julie Anne Robinson</Director>
+        <Episode_Number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</Episode_Number>
+        <Screenwriter>Sarah Dollard</Screenwriter>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#6._The_Choice -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#6._The_Choice">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Episodes_Seasson_2"/>
+        <Is_distributed_by rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Netflix"/>
+        <Director>Lou-Lou Igbokwe</Director>
+        <Director>Tom Verica</Director>
+        <Episode_Number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</Episode_Number>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#6.6_Gigue -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#6.6_Gigue">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Peter_Gregson"/>
+        <Music_Duration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">168</Music_Duration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#7._Harmony -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#7._Harmony">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Episodes_Seasson_2"/>
+        <Is_distributed_by rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Netflix"/>
+        <Director>Cheryl Dunye</Director>
+        <Episode_Number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</Episode_Number>
+        <Screenwriter>Oliver Goldstick</Screenwriter>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#7._Oceans_Apart -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#7._Oceans_Apart">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Episodes_Seasson_1"/>
+        <Is_distributed_by rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Netflix"/>
+        <Director>Alrick Riley</Director>
+        <Episode_Number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</Episode_Number>
+        <Screenwriter>Jay Ross y Abby McDonald</Screenwriter>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#8._After_the_Rain -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#8._After_the_Rain">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Episodes_Seasson_1"/>
+        <Is_distributed_by rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Netflix"/>
+        <Director>Alrick Riley</Director>
+        <Episode_Number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</Episode_Number>
+        <Screenwriter>Chris Van Dusen</Screenwriter>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#8._The_Viscount_Who_Loved_Me -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#8._The_Viscount_Who_Loved_Me">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Episodes_Seasson_2"/>
+        <Is_distributed_by rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Netflix"/>
+        <Director>Cheryl Dunye</Director>
+        <Episode_Number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</Episode_Number>
+        <Screenwriter>Jess Brownell</Screenwriter>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Accidental_Eavesdropping_-_From_the_Netflix_Series_“Bridgerton_Season_Two” -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Accidental_Eavesdropping_-_From_the_Netflix_Series_“Bridgerton_Season_Two”">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Kris_Bowers"/>
+        <Music_Duration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">138</Music_Duration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Bridgerton&apos;s_House -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Bridgerton&apos;s_House">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#London"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Eloise_&amp;_Theo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Eloise_&amp;_Theo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Kris_Bowers"/>
+        <Music_Duration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">47</Music_Duration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Featherington&apos;s_House -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Featherington&apos;s_House">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#London"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Gaîté_parisienne:_Barcarolle -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Gaîté_parisienne:_Barcarolle">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Jacques_Offenbach"/>
+        <Music_Duration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">227</Music_Duration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Happy_Endings_Don&apos;t_Exist -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Happy_Endings_Don&apos;t_Exist">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Kris_Bowers"/>
+        <Music_Duration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">98</Music_Duration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#It&apos;s_My_Fault -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#It&apos;s_My_Fault">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Kris_Bowers"/>
+        <Music_Duration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">231</Music_Duration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Jazz_Suite_No._2:_6._Waltz_II -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Jazz_Suite_No._2:_6._Waltz_II">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Dmitri_Shostakovich"/>
+        <Music_Duration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">225</Music_Duration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Miserable_Together,_Happy_Apart -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Miserable_Together,_Happy_Apart">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Kris_Bowers"/>
+        <Music_Duration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">214</Music_Duration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Mozart:_Violin_Sonata_in_C_Major -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Mozart:_Violin_Sonata_in_C_Major">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Mozart"/>
+        <Music_Duration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">274</Music_Duration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Piano_Sonata_No._21_in_C_Major,_Op._53 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Piano_Sonata_No._21_in_C_Major,_Op._53">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Beethoven"/>
+        <Music_Duration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">602</Music_Duration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Sharpening_My_Knives_-_From_the_Netflix_Series_“Bridgerton_Season_Two” -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Sharpening_My_Knives_-_From_the_Netflix_Series_“Bridgerton_Season_Two”">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Kris_Bowers"/>
+        <Music_Duration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">144</Music_Duration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Simon_Basset​ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Simon_Basset​">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Nobility"/>
+        <Belongs_to_family rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Basset"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Strange_(feat._Hillary_Smith) -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Strange_(feat._Hillary_Smith)">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Kris_Bowers"/>
+        <Music_Duration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">198</Music_Duration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#String_Quartet_in_C_Major,_Op._76 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#String_Quartet_in_C_Major,_Op._76">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Haydn"/>
+        <Music_Duration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">409</Music_Duration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#String_Quartet_in_F_Major,_Op._77 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#String_Quartet_in_F_Major,_Op._77">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Haydn"/>
+        <Music_Duration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">285</Music_Duration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#The_Real_Work_Begins_-_From_the_Netflix_Series_“Bridgerton_Season_Two” -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#The_Real_Work_Begins_-_From_the_Netflix_Series_“Bridgerton_Season_Two”">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Kris_Bowers"/>
+        <Music_Duration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">99</Music_Duration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#thank_u,_next -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#thank_u,_next">
+        <rdf:type rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Vitamin_String_Quartet"/>
+        <Music_Duration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">206</Music_Duration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing">
+        <rdfs:isDefinedBy>Created by Raúl Clemente García y Óscar quero Hijano</rdfs:isDefinedBy>
+        <rdfs:label>Bridgerton&apos;s ontology</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Commoner"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Nobility"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Other"/>
+        </owl:members>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="urn:swrl:var#a">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#b">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#c">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Is_father_of"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#a"/>
+                        <swrl:argument2 rdf:resource="urn:swrl:var#b"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Is_dependant_of"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#b"/>
+                        <swrl:argument2 rdf:resource="urn:swrl:var#a"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Is_father_of"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#a"/>
+                        <swrl:argument2 rdf:resource="urn:swrl:var#b"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Is_father_of"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#a"/>
+                                <swrl:argument2 rdf:resource="urn:swrl:var#c"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Is_brother_or_sister_of"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#b"/>
+                        <swrl:argument2 rdf:resource="urn:swrl:var#c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Is_dependant_of"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#a"/>
+                        <swrl:argument2 rdf:resource="urn:swrl:var#b"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/UOC-Raul_Oscar/ontologies/2022/2/Bridgerton#Is_father_of"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#b"/>
+                        <swrl:argument2 rdf:resource="urn:swrl:var#a"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
